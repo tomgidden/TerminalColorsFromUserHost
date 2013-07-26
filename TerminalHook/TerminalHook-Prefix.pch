@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TerminalHook' target in the 'TerminalHook' project
+//
+
+#ifdef __OBJC__
+  #import <Cocoa/Cocoa.h>
+#endif
