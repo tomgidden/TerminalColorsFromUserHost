@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.01</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -25,6 +25,17 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Tom Gidden. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string></string>
+	<string>TGTerminalHook</string>
+	<key>SIMBLTargetApplications</key>
+	<array>
+		<dict>
+			<key>BundleIdentifier</key>
+			<string>com.apple.Terminal</string>
+			<key>MaxBundleVersion</key>
+			<string>309</string>
+			<key>MinBundleVersion</key>
+			<string>309</string>
+		</dict>
+	</array>
 </dict>
 </plist>

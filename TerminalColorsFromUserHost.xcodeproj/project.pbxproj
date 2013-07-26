@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B335CE017A2FB1800B3214E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B335CDE17A2FB1800B3214E /* InfoPlist.strings */; };
 		0BC2D35F17A2BEB900F1DAB0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC2D35E17A2BEB900F1DAB0 /* Cocoa.framework */; };
-		0BC2D36917A2BEB900F1DAB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2D36717A2BEB900F1DAB0 /* InfoPlist.strings */; };
+		0BC2D37217A2BF8000F1DAB0 /* TGTerminalHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2D37117A2BF8000F1DAB0 /* TGTerminalHook.m */; };
+		0BC2D37517A2CA3800F1DAB0 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2D37417A2CA3800F1DAB0 /* JRSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BC2D35B17A2BEB900F1DAB0 /* TerminalHook.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerminalHook.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B335CDB17A2FB0D00B3214E /* TerminalColorsFromUserHost-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TerminalColorsFromUserHost-Info.plist"; sourceTree = "<group>"; };
+		0B335CDD17A2FB1200B3214E /* TerminalColorsFromUserHost-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TerminalColorsFromUserHost-Prefix.pch"; sourceTree = "<group>"; };
+		0B335CDF17A2FB1800B3214E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BC2D35B17A2BEB900F1DAB0 /* TerminalColorsFromUserHost.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerminalColorsFromUserHost.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC2D35E17A2BEB900F1DAB0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0BC2D36117A2BEB900F1DAB0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		0BC2D36217A2BEB900F1DAB0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0BC2D36317A2BEB900F1DAB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0BC2D36617A2BEB900F1DAB0 /* TerminalHook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TerminalHook-Info.plist"; sourceTree = "<group>"; };
-		0BC2D36817A2BEB900F1DAB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0BC2D36A17A2BEB900F1DAB0 /* TerminalHook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TerminalHook-Prefix.pch"; sourceTree = "<group>"; };
+		0BC2D37017A2BF8000F1DAB0 /* TGTerminalHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTerminalHook.h; sourceTree = "<group>"; };
+		0BC2D37117A2BF8000F1DAB0 /* TGTerminalHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTerminalHook.m; sourceTree = "<group>"; };
+		0BC2D37317A2CA3800F1DAB0 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = SOURCE_ROOT; };
+		0BC2D37417A2CA3800F1DAB0 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +42,13 @@
 		0BC2D35217A2BEB900F1DAB0 = {
 			isa = PBXGroup;
 			children = (
-				0BC2D36417A2BEB900F1DAB0 /* TerminalHook */,
+				0BC2D37017A2BF8000F1DAB0 /* TGTerminalHook.h */,
+				0BC2D37117A2BF8000F1DAB0 /* TGTerminalHook.m */,
+				0BC2D37317A2CA3800F1DAB0 /* JRSwizzle.h */,
+				0BC2D37417A2CA3800F1DAB0 /* JRSwizzle.m */,
+				0B335CDB17A2FB0D00B3214E /* TerminalColorsFromUserHost-Info.plist */,
+				0B335CDD17A2FB1200B3214E /* TerminalColorsFromUserHost-Prefix.pch */,
+				0B335CDE17A2FB1800B3214E /* InfoPlist.strings */,
 				0BC2D35D17A2BEB900F1DAB0 /* Frameworks */,
 				0BC2D35C17A2BEB900F1DAB0 /* Products */,
 			);
@@ -46,7 +57,7 @@
 		0BC2D35C17A2BEB900F1DAB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0BC2D35B17A2BEB900F1DAB0 /* TerminalHook.bundle */,
+				0BC2D35B17A2BEB900F1DAB0 /* TerminalColorsFromUserHost.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,46 +65,19 @@
 		0BC2D35D17A2BEB900F1DAB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0BC2D36317A2BEB900F1DAB0 /* Foundation.framework */,
+				0BC2D36117A2BEB900F1DAB0 /* AppKit.framework */,
 				0BC2D35E17A2BEB900F1DAB0 /* Cocoa.framework */,
-				0BC2D36017A2BEB900F1DAB0 /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0BC2D36017A2BEB900F1DAB0 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0BC2D36117A2BEB900F1DAB0 /* AppKit.framework */,
-				0BC2D36217A2BEB900F1DAB0 /* CoreData.framework */,
-				0BC2D36317A2BEB900F1DAB0 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		0BC2D36417A2BEB900F1DAB0 /* TerminalHook */ = {
-			isa = PBXGroup;
-			children = (
-				0BC2D36517A2BEB900F1DAB0 /* Supporting Files */,
-			);
-			path = TerminalHook;
-			sourceTree = "<group>";
-		};
-		0BC2D36517A2BEB900F1DAB0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0BC2D36617A2BEB900F1DAB0 /* TerminalHook-Info.plist */,
-				0BC2D36717A2BEB900F1DAB0 /* InfoPlist.strings */,
-				0BC2D36A17A2BEB900F1DAB0 /* TerminalHook-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0BC2D35A17A2BEB900F1DAB0 /* TerminalHook */ = {
+		0BC2D35A17A2BEB900F1DAB0 /* TerminalColorsFromUserHost */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0BC2D36D17A2BEB900F1DAB0 /* Build configuration list for PBXNativeTarget "TerminalHook" */;
+			buildConfigurationList = 0BC2D36D17A2BEB900F1DAB0 /* Build configuration list for PBXNativeTarget "TerminalColorsFromUserHost" */;
 			buildPhases = (
 				0BC2D35717A2BEB900F1DAB0 /* Sources */,
 				0BC2D35817A2BEB900F1DAB0 /* Frameworks */,
@@ -103,9 +87,9 @@
 			);
 			dependencies = (
 			);
-			name = TerminalHook;
+			name = TerminalColorsFromUserHost;
 			productName = TerminalHook;
-			productReference = 0BC2D35B17A2BEB900F1DAB0 /* TerminalHook.bundle */;
+			productReference = 0BC2D35B17A2BEB900F1DAB0 /* TerminalColorsFromUserHost.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +101,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Tom Gidden";
 			};
-			buildConfigurationList = 0BC2D35617A2BEB900F1DAB0 /* Build configuration list for PBXProject "TerminalHook" */;
+			buildConfigurationList = 0BC2D35617A2BEB900F1DAB0 /* Build configuration list for PBXProject "TerminalColorsFromUserHost" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -129,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0BC2D35A17A2BEB900F1DAB0 /* TerminalHook */,
+				0BC2D35A17A2BEB900F1DAB0 /* TerminalColorsFromUserHost */,
 			);
 		};
 /* End PBXProject section */
@@ -139,7 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC2D36917A2BEB900F1DAB0 /* InfoPlist.strings in Resources */,
+				0B335CE017A2FB1800B3214E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,16 +134,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC2D37217A2BF8000F1DAB0 /* TGTerminalHook.m in Sources */,
+				0BC2D37517A2CA3800F1DAB0 /* JRSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0BC2D36717A2BEB900F1DAB0 /* InfoPlist.strings */ = {
+		0B335CDE17A2FB1800B3214E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0BC2D36817A2BEB900F1DAB0 /* en */,
+				0B335CDF17A2FB1800B3214E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -231,10 +217,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TerminalHook/TerminalHook-Prefix.pch";
-				INFOPLIST_FILE = "TerminalHook/TerminalHook-Info.plist";
+				GCC_PREFIX_HEADER = "TerminalColorsFromUserHost-Prefix.pch";
+				INFOPLIST_FILE = "TerminalColorsFromUserHost-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TerminalColorsFromUserHost;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -244,10 +230,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TerminalHook/TerminalHook-Prefix.pch";
-				INFOPLIST_FILE = "TerminalHook/TerminalHook-Info.plist";
+				GCC_PREFIX_HEADER = "TerminalColorsFromUserHost-Prefix.pch";
+				INFOPLIST_FILE = "TerminalColorsFromUserHost-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TerminalColorsFromUserHost;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -255,7 +241,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0BC2D35617A2BEB900F1DAB0 /* Build configuration list for PBXProject "TerminalHook" */ = {
+		0BC2D35617A2BEB900F1DAB0 /* Build configuration list for PBXProject "TerminalColorsFromUserHost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0BC2D36B17A2BEB900F1DAB0 /* Debug */,
@@ -264,13 +250,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BC2D36D17A2BEB900F1DAB0 /* Build configuration list for PBXNativeTarget "TerminalHook" */ = {
+		0BC2D36D17A2BEB900F1DAB0 /* Build configuration list for PBXNativeTarget "TerminalColorsFromUserHost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0BC2D36E17A2BEB900F1DAB0 /* Debug */,
 				0BC2D36F17A2BEB900F1DAB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
